@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CalculadoraIMC</string>
+    <string name="titulo">Calculadora de IMC</string>
+    <string name="info">Calcule seu Índice de Massa Corpórea e veja dicas de acordo com o resultado</string>
+    <string name="altura">Qual é sua altura? (cm)</string>
+    <string name="exAltura">EX: 170</string>
+    <string name="peso">Qual seu peso? (Kg)</string>
+    <string name="exPeso">EX: 65</string>
+    <string name="sexo">Qual seu sexo?</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="calcular">Calcular</string>
+    <string name="novoCalculo">Calcular Novamente</string>
+    <string name="sair">Sair</string>
+</resources>

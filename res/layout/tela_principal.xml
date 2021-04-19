@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cinza"
+    tools:context=".TelaPrincipal"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Calculadora IMC"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@color/roxinho"
+        android:textColor="@color/white"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/info"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_marginTop="15dp"
+        android:text="@string/altura"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/exAltura"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_marginTop="15dp"
+        android:text="@string/peso"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/exPeso"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_marginTop="15dp"
+        android:text="@string/sexo"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/rbSexoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:text="@string/feminino"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/rbSexoM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:text="@string/calcular"
+        android:layout_marginTop="25dp"
+        android:layout_height="65dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
